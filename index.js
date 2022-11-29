@@ -4,6 +4,10 @@ const PORT = process.env.PORT || 4000
 
 const app = express()
 
+app.get('/',(req,res) => {
+    res.status(200).send("<h1>Home Page</h1>")
+})
+
 app.get('/api/v1/instagram', (req,res) => {
     const socialData = {
         username : "santhosh_sr3",
@@ -35,9 +39,7 @@ app.get('/api/v1/linkdin', (req,res) => {
     }
     res.status(200).json(socialData)
 })
-app.get('/',(req,res) => {
-    res.status(200).send("Home Page")
-})
+
 app.get('/api/v1/:userinput',(req,res) => {
     res.status(200).json({param : req.params.userinput})
     console.log(req.params.userinput);
