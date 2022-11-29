@@ -35,6 +35,9 @@ app.get('/api/v1/linkdin', (req,res) => {
     }
     res.status(200).json(socialData)
 })
+app.get('/',(req,res) => {
+    res.status(200).send("Home Page")
+})
 app.get('/api/v1/:userinput',(req,res) => {
     res.status(200).json({param : req.params.userinput})
     console.log(req.params.userinput);
