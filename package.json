@@ -1,0 +1,19 @@
+{
+  "name": "socialapp",
+  "version": "1.0.0",
+  "description": "fetch users followers and following data of various social media apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon /index.js"
+  },
+  "author": "SR_3",
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^4.0.14",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
